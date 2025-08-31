@@ -1,0 +1,9 @@
+Advantage:
+1)Dynamic Sizing
+2)Efficent Insertion and Deletion
+3)Implement Complex Data Strructures like Trees,graps,queus 
+
+Disadvantages:
+1)Requires memory for storing pointers 
+2)No direct or random  access 
+3)Not storing in contigues memory
