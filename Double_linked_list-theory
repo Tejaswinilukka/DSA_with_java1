@@ -2,7 +2,9 @@ Double linked list:
 
 The double linked list is more complex data struction then singlr linked list .It has many advantages .The main advantages of double linked list is thta it allows efficent travelsal of the list from both the directions.This is becauses the node in the list contains the the pointer in the previous node and the next node This alloes for quick and easy inssrtion and deletion of the nodes in the listas well as more efficent travelsa;lof the list from both the sides
 
-Representation of the single linked list:
+Representation of the Double linked list:
 1)Data
 2)A pointer to the next node 
 3)A pointer to the previous node
+
+appilactions:
