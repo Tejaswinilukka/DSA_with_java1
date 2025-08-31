@@ -1,0 +1,10 @@
+This Linked list have many applications 
+1)polynomial Arthematic
+2)sparse Matrices
+3)Memory management in os
+4)Hash chaining in hash Tables
+5)file System Navigation
+6)Undo /Redo operations
+7)Image sliding
+8)Browser History Navigation
+etc...
