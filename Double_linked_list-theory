@@ -7,4 +7,18 @@ Representation of the Double linked list:
 2)A pointer to the next node 
 3)A pointer to the previous node
 
-appilactions:
+Advantage of double linked list:
+1)binary traversal
+2)Insertion at both the ends
+3)efficent Deletion
+4)easy to implement deque
+
+Disadvantage of double linked list:
+1)Extra memory per node
+2)more complex implementation
+
+
+operation in ll:
+1)insertion 
+2)deletion
+3)Traversal
