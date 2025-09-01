@@ -1,0 +1,83 @@
+import java.util.*;
+class Node{
+    int data;
+    Node next;
+    Node pre;
+    Node(int d){
+        data=d;
+        pre=null;
+        next=null;
+    }
+}
+class Main{
+    public static void main(String[] args) {
+        Scanner sc=new Scanner(System.in);
+        System.out.println("enter the number of nodes:");
+        int n=sc.nextInt();
+        if(n<=0){
+            System.out.println("list is empty");
+            return;
+        }
+        //this is because initially the list is empty wwe have to create that list 
+        //head=for the foirst element of the list->whether the node is empty or not 
+        //tail=for last node of the list->efficent appending the elements and when we want to find the last elemnet we just go througyt it
+        //curr=just a temporary variable with this we have to travarse the list
+        Node head=null;
+        Node tail=null;
+       
+
+        //taking the for loop fr creating all the nodes
+        for(int i=1;i<=n;i++){
+            System.out.println("Node "+i+":");
+            int d=sc.nextInt();
+            Node newnode=new Node(d);
+        
+        if(head==null){
+            head=newnode;
+            tail=newnode;
+        }
+        else{
+            tail.next=  newnode;
+            newnode.pre=tail;
+            tail=newnode;
+        }
+    }
+        System.out.println("doubly linked list:");
+        Node temp=head;
+        while(temp!=null){
+            System.out.print(temp.data);
+            if(temp.next!=null){
+
+                System.out.print("<=>");
+
+            }
+            temp=temp.next;
+            
+        }
+        System.out.println();
+
+        /* 
+        this si the option -2
+        //creating the fist node
+        Node head=new Node(2);
+        //next node
+        head.next=new Node(3);
+        head.next.pre=head;
+        //next node
+        head.next.next=new Node(4);
+        head.next.next.pre=head.next;
+        //creating the next
+        head.next.next.next=new Node (6);
+        head.next.next.next.pre=head.next.next;
+        //traversal
+        Node temp=head;
+        while(temp!=null){
+            System.out.print(temp.data);
+            if(temp.next!=null){
+                System.out.print("<->");
+            }
+            temp=temp.next;
+        }
+            */
+    }
+}
